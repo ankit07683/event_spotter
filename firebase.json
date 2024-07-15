@@ -1,0 +1,43 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ak-events-app",
+          "appId": "1:276325636165:android:0c1947b72234a9bfa26b2c",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "ak-events-app",
+          "appId": "1:276325636165:ios:9b8ca8709b8d6382a26b2c",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ak-events-app",
+          "configurations": {
+            "android": "1:276325636165:android:0c1947b72234a9bfa26b2c",
+            "ios": "1:276325636165:ios:9b8ca8709b8d6382a26b2c"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

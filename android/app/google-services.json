@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "276325636165",
+    "firebase_url": "https://ak-events-app-default-rtdb.firebaseio.com",
+    "project_id": "ak-events-app",
+    "storage_bucket": "ak-events-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276325636165:android:0c1947b72234a9bfa26b2c",
+        "android_client_info": {
+          "package_name": "com.example.event_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6b5Uut4t5UiMxIX_20AVP6alsN2z-QU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276325636165:android:e1793a6214140834a26b2c",
+        "android_client_info": {
+          "package_name": "com.iqonic.event_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6b5Uut4t5UiMxIX_20AVP6alsN2z-QU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
