@@ -73,15 +73,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                                 })),
                             Container(
                               alignment: Alignment.center,
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               decoration: boxDecorationWithRoundedCorners(
                                   backgroundColor: primaryColor1,
                                   borderRadius: radius(0)),
                               child: event.time == null
-                                  ? SizedBox()
+                                  ? const SizedBox()
                                   : Row(
                                       children: [
-                                        Icon(Icons.timer_sharp, color: white),
+                                        const Icon(Icons.timer_sharp,
+                                            color: white),
                                         10.width,
                                         Text(event.time.toString(),
                                             style:
@@ -99,7 +100,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                               children: [
                                 Text(event.category!,
                                     style: secondaryTextStyle()),
-                                Text('\$' + event.price.toString(),
+                                Text('\$${event.price}',
                                     style: boldTextStyle(color: primaryColor1)),
                               ],
                             ),
@@ -132,13 +133,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                                 Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(Icons.location_on_outlined, size: 16),
+                                    const Icon(Icons.location_on_outlined,
+                                        size: 16),
                                     8.width,
                                     Text(event.add!,
                                         style: secondaryTextStyle()),
                                   ],
                                 ),
-                                Text(event.distance.toString() + 'km',
+                                Text('${event.distance}km',
                                     style: secondaryTextStyle(
                                         color: primaryColor1)),
                               ],

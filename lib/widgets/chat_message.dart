@@ -5,10 +5,10 @@ import 'package:nb_utils/nb_utils.dart';
 
 class ChatMessageWidget extends StatelessWidget {
   const ChatMessageWidget({
-    Key? key,
+    super.key,
     required this.isMe,
     required this.data,
-  }) : super(key: key);
+  });
 
   final bool isMe;
   final EAMessageModel data;

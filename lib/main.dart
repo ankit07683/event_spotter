@@ -1,5 +1,5 @@
 import 'package:event_spotter/service/routing_service.dart';
-import 'package:event_spotter/utils/Constants.dart';
+import 'package:event_spotter/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -31,27 +31,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData().copyWith(
             colorScheme: ColorScheme.fromSeed(
                 seedColor: const Color.fromARGB(255, 203, 3, 3))),
-        title: app_name,
+        title: appName,
         debugShowCheckedModeBanner: false,
         routerConfig: router);
   }
 }
-
-// MaterialApp(
-//         theme: ThemeData().copyWith(
-//             colorScheme: ColorScheme.fromSeed(
-//                 seedColor: const Color.fromARGB(255, 203, 3, 3))),
-//         title: app_name,
-//         debugShowCheckedModeBanner: false,
-//         home: StreamBuilder(
-//             stream: FirebaseAuth.instance.authStateChanges(),
-//             builder: (ctx, snapshot) {
-//               if (snapshot.connectionState == ConnectionState.waiting) {
-//                 return const SplashScreen();
-//               }
-//               if (snapshot.hasData) {
-//                 return const RedirectUser();
-//                 // return const EAWalkThroughScreen();
-//               }
-//               return const AuthScreen();
-//             }));

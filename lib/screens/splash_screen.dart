@@ -2,7 +2,7 @@ import 'package:event_spotter/firebase-actions/firebase_actions.dart';
 import 'package:event_spotter/model/user_modal.dart';
 import 'package:event_spotter/providers/user.dart';
 import 'package:event_spotter/service/routing_service.dart';
-import 'package:event_spotter/utils/Constants.dart';
+import 'package:event_spotter/utils/constants.dart';
 import 'package:event_spotter/utils/colors.dart';
 import 'package:event_spotter/utils/images_mapping.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -73,11 +73,11 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
             children: [
               Image.asset(imgAppLogo, height: 200, fit: BoxFit.cover),
               20.height,
-              Text(app_name,
+              Text(appName,
                   style: GoogleFonts.acme(fontSize: 40, color: primaryColor1)),
               20.height,
               Text(
-                app_tagline,
+                appTagline,
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),

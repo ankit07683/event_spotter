@@ -1,5 +1,5 @@
 import 'package:event_spotter/utils/colors.dart';
-import 'package:event_spotter/utils/Constants.dart';
+import 'package:event_spotter/utils/constants.dart';
 import 'package:event_spotter/utils/data_provider.dart';
 import 'package:event_spotter/utils/images_mapping.dart';
 import 'package:flutter/material.dart';
@@ -66,13 +66,13 @@ class NewsDetailScreenState extends State<NewsDetailScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(EAFashionstitle, style: boldTextStyle(size: 24)),
+              Text(fashionstitle, style: boldTextStyle(size: 24)),
               8.height,
               Text("MAR 10,2021", style: secondaryTextStyle()),
               16.height,
-              Text(EAFashionsSubtitle, style: primaryTextStyle()),
+              Text(fashionsSubtitle, style: primaryTextStyle()),
               16.height,
-              Text(EAFashionsSubtitle1, style: primaryTextStyle()),
+              Text(fashionsSubtitle1, style: primaryTextStyle()),
               16.height,
               Stack(
                 alignment: Alignment.bottomCenter,
@@ -120,7 +120,7 @@ class NewsDetailScreenState extends State<NewsDetailScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("#cinema #movie", style: secondaryTextStyle()),
-                      Text('\$' + '20',
+                      Text('\$' '20',
                           style: boldTextStyle(color: primaryColor1)),
                     ],
                   ),
@@ -158,7 +158,7 @@ class NewsDetailScreenState extends State<NewsDetailScreen> {
                               style: secondaryTextStyle()),
                         ],
                       ),
-                      Text('8' + 'km',
+                      Text('8' 'km',
                           style: secondaryTextStyle(color: primaryColor1)),
                     ],
                   ),

@@ -5,7 +5,7 @@ import 'package:event_spotter/model/EAInboxModel.dart';
 import 'package:event_spotter/model/EAReviewModel.dart';
 import 'package:event_spotter/model/EATicketModel.dart';
 import 'package:event_spotter/model/EAWalkThroughModel.dart';
-import 'package:event_spotter/utils/Constants.dart';
+import 'package:event_spotter/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'images_mapping.dart';
 
@@ -385,127 +385,127 @@ List<EAMessageModel> getChatMsgData() {
   List<EAMessageModel> list = [];
 
   EAMessageModel c1 = EAMessageModel();
-  c1.senderId = EASender_id;
-  c1.receiverId = EAReceiver_id;
+  c1.senderId = senderId;
+  c1.receiverId = receiverId;
   c1.msg = 'Helloo';
   c1.time = '1:43 AM';
   list.add(c1);
 
   EAMessageModel c2 = EAMessageModel();
-  c2.senderId = EASender_id;
-  c2.receiverId = EAReceiver_id;
+  c2.senderId = senderId;
+  c2.receiverId = receiverId;
   c2.msg = 'How are you? What are you doing?';
   c2.time = '1:45 AM';
   list.add(c2);
 
   EAMessageModel c3 = EAMessageModel();
-  c3.senderId = EAReceiver_id;
-  c3.receiverId = EASender_id;
+  c3.senderId = receiverId;
+  c3.receiverId = senderId;
   c3.msg = 'Helloo...';
   c3.time = '1:45 AM';
   list.add(c3);
 
   EAMessageModel c4 = EAMessageModel();
-  c4.senderId = EASender_id;
-  c4.receiverId = EAReceiver_id;
+  c4.senderId = senderId;
+  c4.receiverId = receiverId;
   c4.msg = 'I am good. Can you do something for me? I need your help.';
   c4.time = '1:45 AM';
   list.add(c4);
 
   EAMessageModel c5 = EAMessageModel();
-  c5.senderId = EASender_id;
-  c5.receiverId = EAReceiver_id;
+  c5.senderId = senderId;
+  c5.receiverId = receiverId;
   c5.msg = 'I am good. Can you do something for me? I need your help.';
   c5.time = '1:45 AM';
   list.add(c5);
 
   EAMessageModel c6 = EAMessageModel();
-  c6.senderId = EAReceiver_id;
-  c6.receiverId = EASender_id;
+  c6.senderId = receiverId;
+  c6.receiverId = senderId;
   c6.msg = 'I am good. Can you do something for me? I need your help.';
   c6.time = '1:45 AM';
   list.add(c6);
 
   EAMessageModel c7 = EAMessageModel();
-  c7.senderId = EASender_id;
-  c7.receiverId = EAReceiver_id;
+  c7.senderId = senderId;
+  c7.receiverId = receiverId;
   c7.msg = 'I am good. Can you do something for me? I need your help.';
   c7.time = '1:45 AM';
   list.add(c7);
 
   EAMessageModel c8 = EAMessageModel();
-  c8.senderId = EAReceiver_id;
-  c8.receiverId = EASender_id;
+  c8.senderId = receiverId;
+  c8.receiverId = senderId;
   c8.msg = 'I am good. Can you do something for me? I need your help.';
   c8.time = '1:45 AM';
   list.add(c8);
 
   EAMessageModel c9 = EAMessageModel();
-  c9.senderId = EASender_id;
-  c9.receiverId = EAReceiver_id;
+  c9.senderId = senderId;
+  c9.receiverId = receiverId;
   c9.msg = 'I am good. Can you do something for me? I need your help.';
   c9.time = '1:45 AM';
   list.add(c9);
 
   EAMessageModel c10 = EAMessageModel();
-  c10.senderId = EAReceiver_id;
-  c10.receiverId = EASender_id;
+  c10.senderId = receiverId;
+  c10.receiverId = senderId;
   c10.msg = 'I am good. Can you do something for me? I need your help.';
   c10.time = '1:45 AM';
   list.add(c10);
 
   EAMessageModel c11 = EAMessageModel();
-  c11.senderId = EAReceiver_id;
-  c11.receiverId = EASender_id;
+  c11.senderId = receiverId;
+  c11.receiverId = senderId;
   c11.msg = 'I am good. Can you do something for me? I need your help.';
   c11.time = '1:45 AM';
   list.add(c11);
 
   EAMessageModel c12 = EAMessageModel();
-  c12.senderId = EASender_id;
-  c12.receiverId = EAReceiver_id;
+  c12.senderId = senderId;
+  c12.receiverId = receiverId;
   c12.msg = 'I am good. Can you do something for me? I need your help.';
   c12.time = '1:45 AM';
   list.add(c12);
 
   EAMessageModel c13 = EAMessageModel();
-  c13.senderId = EASender_id;
-  c13.receiverId = EAReceiver_id;
+  c13.senderId = senderId;
+  c13.receiverId = receiverId;
   c13.msg = 'I am good. Can you do something for me? I need your help.';
   c13.time = '1:45 AM';
   list.add(c13);
 
   EAMessageModel c14 = EAMessageModel();
-  c14.senderId = EAReceiver_id;
-  c14.receiverId = EASender_id;
+  c14.senderId = receiverId;
+  c14.receiverId = senderId;
   c14.msg = 'I am good. Can you do something for me? I need your help.';
   c14.time = '1:45 AM';
   list.add(c14);
 
   EAMessageModel c15 = EAMessageModel();
-  c15.senderId = EASender_id;
-  c15.receiverId = EAReceiver_id;
+  c15.senderId = senderId;
+  c15.receiverId = receiverId;
   c15.msg = 'I am good. Can you do something for me? I need your help.';
   c15.time = '1:45 AM';
   list.add(c15);
 
   EAMessageModel c16 = EAMessageModel();
-  c16.senderId = EAReceiver_id;
-  c16.receiverId = EASender_id;
+  c16.senderId = receiverId;
+  c16.receiverId = senderId;
   c16.msg = 'I am good. Can you do something for me? I need your help.';
   c16.time = '1:45 AM';
   list.add(c16);
 
   EAMessageModel c17 = EAMessageModel();
-  c17.senderId = EASender_id;
-  c17.receiverId = EAReceiver_id;
+  c17.senderId = senderId;
+  c17.receiverId = receiverId;
   c17.msg = 'I am good. Can you do something for me? I need your help.';
   c17.time = '1:45 AM';
   list.add(c17);
 
   EAMessageModel c18 = EAMessageModel();
-  c18.senderId = EAReceiver_id;
-  c18.receiverId = EASender_id;
+  c18.senderId = receiverId;
+  c18.receiverId = senderId;
   c18.msg = 'I am good. Can you do something for me? I need your help.';
   c18.time = '1:45 AM';
   list.add(c18);

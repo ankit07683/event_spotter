@@ -317,7 +317,7 @@ class _EventDetailScreenState extends State<EventDetailScreen> {
                                         style: secondaryTextStyle()),
                                   ],
                                 ),
-                                Text(forYouList[i].distance.toString() + 'km',
+                                Text('${forYouList[i].distance}km',
                                     style: secondaryTextStyle(
                                         color: primaryColor1)),
                               ],

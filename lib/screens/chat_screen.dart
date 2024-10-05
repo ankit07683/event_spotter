@@ -1,6 +1,6 @@
 import 'package:event_spotter/model/event_modal.dart';
 import 'package:event_spotter/service/routing_service.dart';
-import 'package:event_spotter/utils/Constants.dart';
+import 'package:event_spotter/utils/constants.dart';
 import 'package:event_spotter/utils/data_provider.dart';
 import 'package:event_spotter/widgets/app_bar.dart';
 import 'package:event_spotter/widgets/chat_message.dart';
@@ -45,14 +45,14 @@ class _ChatScreenState extends State<ChatScreen> {
       var msgModel = EAMessageModel();
       msgModel.msg = msgController.text.toString();
       msgModel.time = formatter.format(DateTime.now());
-      msgModel.senderId = EASender_id;
+      msgModel.senderId = senderId;
       hideKeyboard(context);
       msgListing.insert(0, msgModel);
 
       var msgModel1 = EAMessageModel();
       msgModel1.msg = msgController.text.toString();
       msgModel1.time = formatter.format(DateTime.now());
-      msgModel1.senderId = EAReceiver_id;
+      msgModel1.senderId = receiverId;
 
       msgController.text = '';
 
@@ -60,7 +60,7 @@ class _ChatScreenState extends State<ChatScreen> {
       FocusScope.of(context).requestFocus(msgFocusNode);
       setState(() {});
 
-      await Future.delayed(Duration(seconds: 1));
+      await Future.delayed(const Duration(seconds: 1));
 
       msgListing.insert(0, msgModel1);
 
@@ -97,18 +97,20 @@ class _ChatScreenState extends State<ChatScreen> {
       body: Stack(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 5, vertical: 4),
-            decoration: BoxDecoration(color: white),
+            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 4),
+            decoration: const BoxDecoration(color: white),
             child: ListView.separated(
-              separatorBuilder: (_, i) => Divider(color: Colors.transparent),
+              separatorBuilder: (_, i) =>
+                  const Divider(color: Colors.transparent),
               shrinkWrap: true,
               reverse: true,
               controller: scrollController,
               itemCount: msgListing.length,
-              padding: EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 70),
+              padding:
+                  const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 70),
               itemBuilder: (_, index) {
                 EAMessageModel data = msgListing[index];
-                var isMe = data.senderId == EASender_id;
+                var isMe = data.senderId == senderId;
 
                 return ChatMessageWidget(isMe: isMe, data: data);
               },
@@ -117,7 +119,8 @@ class _ChatScreenState extends State<ChatScreen> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              padding: EdgeInsets.only(left: 12, right: 12, top: 8, bottom: 8),
+              padding:
+                  const EdgeInsets.only(left: 12, right: 12, top: 8, bottom: 8),
               decoration:
                   BoxDecoration(color: white, boxShadow: defaultBoxShadow()),
               child: Row(
@@ -141,7 +144,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     },
                   ).expand(),
                   IconButton(
-                    icon: Icon(Icons.send, size: 25),
+                    icon: const Icon(Icons.send, size: 25),
                     onPressed: () async {
                       sendClick();
                     },

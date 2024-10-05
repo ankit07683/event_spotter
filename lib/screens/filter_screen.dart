@@ -146,7 +146,7 @@ class _FilterScreenState extends State<FilterScreen> {
                 activeTrackColor: primaryColor1,
                 inactiveTrackColor: grey.withOpacity(0.1),
                 thumbColor: white,
-                valueIndicatorTextStyle: TextStyle(color: Colors.white),
+                valueIndicatorTextStyle: const TextStyle(color: Colors.white),
               ),
               child: RangeSlider(
                 values: _currentRangeValues,
